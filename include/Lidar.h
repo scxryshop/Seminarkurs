@@ -12,13 +12,13 @@ using namespace std;
 
 class Lidar{
     public:
-        Lidar(HardwareSerial ls, int PWMPin);
-        void printScan();
-        void getPolarPoint();
+        Lidar(HardwareSerial SerialPort, int PWMPin);
+        void getScan();
+        void collectCloud();
     private: 
         RPLidar lidar;
-        int PWMPin;
-        list<Point> derScan;
+        int PWMPin;   
+        list<Point> derScan, derScanTMP;
 };
 
 #endif

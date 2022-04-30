@@ -1,11 +1,15 @@
 #include <Arduino.h>
+#include <Lidar.h>
+
+#define LIDAR_PWM_PIN 14
 
 TaskHandle_t Task1;
 TaskHandle_t Task2;
+Lidar derLidar(Serial2, LIDAR_PWM_PIN);
 
 void task1code( void * parameter){
     for(;;){
-        
+        derLidar.collectCloud();
     }
 }
 

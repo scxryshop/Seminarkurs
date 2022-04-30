@@ -4,8 +4,8 @@
 class CoreTask{
 
     public:
+        CoreTask();
 
-        
 
 };
 

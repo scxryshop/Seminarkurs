@@ -11,7 +11,7 @@ void task1code( void * parameter){
 
 void task2code( void * parameter){
     for(;;){
-
+        
     }
 }
 
@@ -40,5 +40,5 @@ void setup(){
 }
 
 void loop(){
-    
+
 }
